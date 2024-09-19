@@ -85,4 +85,15 @@ img {
 
 table {
 	max-width: 100%;
+	width: 100%;
+}
+@media (max-width: 768px) {
+	table {
+		max-width: 700px;
+		width: 700px;
+	}
+
+	tr {
+		max-width: 100%;
+	}
 }
