@@ -10,3 +10,11 @@ nav {
 	letter-spacing: 1px;
 	/* font-weight: bold; */
 }
+
+@media (max-width: 768px) {
+	.logo-utn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}
