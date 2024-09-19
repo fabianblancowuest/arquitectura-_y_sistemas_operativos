@@ -78,3 +78,7 @@ button:focus-visible {
 	/* position: absolute; */
 	/* right: 10px; */
 }
+
+img {
+	max-width: 100%;
+}
