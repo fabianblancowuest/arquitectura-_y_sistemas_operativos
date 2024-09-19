@@ -9,13 +9,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MemoriaROM } from "./components/MemoriaROM/MemoriaROM";
 import { Firmware } from "./components/Firmware/Firmware";
 import { Footer } from "./components/Footer/Footer";
+import { Integrantes } from "./components/Integrantes/Integrantes";
+import { EspacioDeDirecciones } from "./components/EspacioDeDirecciones";
+import { AdministracionMemoria } from "./components/AdministracionMemoria";
+import { Presentacion } from "./components/Presentacion";
 
 function App() {
 	return (
 		<>
 			<Router>
 				<Navbar></Navbar>
-				<h1 className="title">Arquitectura y sistemas operativos</h1>
+				<h1 className="title">Arquitectura y Sistemas Operativos</h1>
 				{/* <div>
 					<a href="https://vitejs.dev" target="_blank">
 						<img src={viteLogo} className="logo" alt="Vite logo" />
@@ -36,6 +40,22 @@ function App() {
 							element={<MemoriaROM></MemoriaROM>}
 						></Route>
 						<Route path="firmware" element={<Firmware></Firmware>}></Route>
+						<Route
+							path="espacio-de-direcciones"
+							element={<EspacioDeDirecciones></EspacioDeDirecciones>}
+						></Route>
+						<Route
+							path="administracion-de-memoria"
+							element={<AdministracionMemoria></AdministracionMemoria>}
+						></Route>
+						<Route
+							path="integrantes"
+							element={<Integrantes></Integrantes>}
+						></Route>
+						<Route
+							path="presentacion"
+							element={<Presentacion></Presentacion>}
+						></Route>
 					</Routes>
 				</main>
 				<Footer></Footer>

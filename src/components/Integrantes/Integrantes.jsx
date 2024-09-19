@@ -1,10 +1,11 @@
 import React from "react";
+import "./Intregrantes.css";
 
 export const Integrantes = () => {
 	return (
 		<section>
 			<h2>Integrantes del grupo 6:</h2>
-			<ul>
+			<ul className="list integrantes">
 				<li>Fabián Blanco Wuest</li>
 				<li>Jose Delfler</li>
 				<li>Lía Barcos</li>
