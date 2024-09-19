@@ -14,6 +14,7 @@ import { EspacioDeDirecciones } from "./components/EspacioDeDirecciones";
 import { AdministracionMemoria } from "./components/AdministracionMemoria";
 import { Presentacion } from "./components/Presentacion";
 import { MemoriaVirtual } from "./components/MemoriaVirtual";
+import { Magnitudes } from "./components/Magnitudes";
 
 function App() {
 	return (
@@ -58,6 +59,7 @@ function App() {
 							element={<Presentacion></Presentacion>}
 						></Route>
 						<Route path="memoria-virtual" element={<MemoriaVirtual />}></Route>
+						<Route path="magnitudes" element={<Magnitudes />}></Route>
 					</Routes>
 				</main>
 				<Footer></Footer>

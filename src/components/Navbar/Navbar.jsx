@@ -112,6 +112,16 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
+									<NavLink to={"/magnitudes"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Magnitudes
+											</a>
+										</li>
+									</NavLink>
 								</ul>
 							</li>
 							{/* <li class="nav-item">
@@ -128,7 +138,7 @@ export const Navbar = () => {
 								</li>
 							</NavLink>
 						</ul>
-						{/* <form class="d-flex" role="search">
+						<form class="d-flex" role="search">
 							<input
 								class="form-control me-2"
 								type="search"
@@ -138,7 +148,7 @@ export const Navbar = () => {
 							<button class="btn btn-outline-success" type="submit">
 								Search
 							</button>
-						</form> */}
+						</form>
 						<img className="logo-utn" src={logo} alt="Logo UTN" />
 					</div>
 				</div>
