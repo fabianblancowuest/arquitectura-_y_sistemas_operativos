@@ -3,7 +3,7 @@ import React from "react";
 export const MemoriaCacheRAM = () => {
 	return (
 		<div className="container">
-			<h2 className="title">La memoria caché y la memoria RAM</h2>
+			<h2 className="subtitle">La memoria caché y la memoria RAM</h2>
 			<p className="paragraph">
 				La memoria caché y la RAM (memoria de acceso aleatorio) son dos tipos de
 				memoria que se utilizan para almacenar datos temporalmente, pero tienen

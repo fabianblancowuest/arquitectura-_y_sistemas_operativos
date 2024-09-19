@@ -8,6 +8,7 @@ import { MemoriaCacheRAM } from "./components/Glosario/MemoriaCacheRAM";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MemoriaROM } from "./components/MemoriaROM/MemoriaROM";
 import { Firmware } from "./components/Firmware/Firmware";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -37,6 +38,7 @@ function App() {
 						<Route path="firmware" element={<Firmware></Firmware>}></Route>
 					</Routes>
 				</main>
+				<Footer></Footer>
 			</Router>
 		</>
 	);

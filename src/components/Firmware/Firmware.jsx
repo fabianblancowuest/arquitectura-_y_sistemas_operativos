@@ -4,7 +4,7 @@ import "../Resumen.css";
 export const Firmware = () => {
 	return (
 		<section className="container">
-			<h2>¿Qué es un firmware</h2>
+			<h2>¿Qué es un firmware?</h2>
 			<p>
 				El firmware es un tipo de software esencial que está embebido en el
 				hardware de un dispositivo. Se encarga de controlar las funciones

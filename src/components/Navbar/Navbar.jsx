@@ -88,6 +88,13 @@ export const Navbar = () => {
 									Disabled
 								</a>
 							</li> */}
+							<NavLink to={"/integrantes"}>
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#">
+										Integrantes
+									</a>
+								</li>
+							</NavLink>
 						</ul>
 						{/* <form class="d-flex" role="search">
 							<input

@@ -5,7 +5,8 @@ export const MemoriaROM = () => {
 	return (
 		<>
 			<div className="container">
-				<p>
+				<h2 className="subtitle">La Memoria ROM</h2>
+				<p className="paragraph">
 					La memoria ROM (Read-Only Memory o Memoria de Solo Lectura) es un tipo
 					de memoria no volátil que se utiliza para almacenar de forma
 					permanente instrucciones y datos esenciales que no deben ser
@@ -35,7 +36,7 @@ export const MemoriaROM = () => {
 					</li>
 				</ol>
 				<h2>Tipos de memoria ROM:</h2>
-				<p>
+				<p className="paragraph">
 					Existen varios tipos de ROM que varían en la capacidad de ser
 					reescritos o actualizados:
 				</p>
@@ -67,7 +68,7 @@ export const MemoriaROM = () => {
 					</li>
 				</ol>
 				<h2>Función de la memoria ROM:</h2>
-				<p>
+				<p className="paragraph">
 					La ROM es esencial en muchos dispositivos porque contiene el firmware,
 					un conjunto de instrucciones básicas que son necesarias para que el
 					hardware funcione correctamente. Este firmware es crítico para el
@@ -94,7 +95,7 @@ export const MemoriaROM = () => {
 						controladores de hardware.
 					</li>
 				</ul>
-				<p>
+				<p className="paragraph">
 					En resumen, la memoria ROM es una memoria crítica para el
 					funcionamiento de cualquier dispositivo que necesite almacenar
 					instrucciones básicas permanentes, como el código que controla el
