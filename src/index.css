@@ -82,3 +82,7 @@ button:focus-visible {
 img {
 	max-width: 100%;
 }
+
+table {
+	max-width: 100%;
+}
