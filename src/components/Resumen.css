@@ -1,0 +1,49 @@
+.container {
+	font-size: 1rem;
+	letter-spacing: 1px;
+	max-width: 1200px;
+	line-height: 1.5;
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 2em;
+}
+
+.paragraph {
+	font-size: 1.1rem;
+	font-weight: normal;
+	letter-spacing: 0.8px;
+	/* text-align: center; */
+}
+
+strong {
+	font-weight: 900;
+	/* color: #222; */
+}
+
+table {
+	font-size: 1.1rem;
+	margin: 0 auto;
+}
+
+td,
+th {
+	border: 1px solid white;
+	padding: 1rem;
+}
+
+ol,
+li {
+	max-width: 900px;
+	margin: 1em auto;
+	text-align: left;
+}
+
+.li {
+	background-color: #444;
+	border-radius: 5px;
+	padding: 1em;
+}
