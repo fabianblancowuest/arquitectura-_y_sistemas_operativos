@@ -5,7 +5,7 @@ export const Resumen = () => {
 	return (
 		<div className="container">
 			<p>
-				<h2 className="title">
+				<h2 className="subtitle">
 					1. Administración del intercambio memoria-disco
 				</h2>
 				<p className="paragraph">
@@ -18,7 +18,7 @@ export const Resumen = () => {
 					memoria, aunque el acceso a disco es mucho más lento que a la memoria
 					RAM.
 				</p>
-				<h2>2. Proceso de intercambio memoria-disco</h2>
+				<h2 className="subtitle">2. Proceso de intercambio memoria-disco</h2>
 				<p className="paragraph">
 					El proceso de intercambio se activa cuando la memoria RAM está casi
 					saturada. El sistema operativo identifica las páginas de memoria menos
@@ -36,7 +36,9 @@ export const Resumen = () => {
 					páginas: Si el proceso necesita una página que fue intercambiada, esta
 					se recupera de la partición de swap.
 				</p>
-				<h2>3. Estrategias de administración y optimización</h2>
+				<h2 className="subtitle">
+					3. Estrategias de administración y optimización
+				</h2>
 				<p className="paragraph">
 					Para mejorar la administración del intercambio y optimizar el
 					rendimiento, existen varias estrategias: Ajuste de tamaño del swap: El

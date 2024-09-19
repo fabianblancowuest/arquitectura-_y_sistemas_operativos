@@ -1,8 +1,9 @@
 import React from "react";
+import "../Resumen.css";
 
 export const Firmware = () => {
 	return (
-		<>
+		<section className="container">
 			<h2>¿Qué es un firmware</h2>
 			<p>
 				El firmware es un tipo de software esencial que está embebido en el
@@ -13,7 +14,7 @@ export const Firmware = () => {
 				actualizado por el fabricante.
 			</p>
 			<h2>Características clave del firmware:</h2>
-			<ul>
+			<ul className="list">
 				<li>
 					Intermediario entre hardware y software: Controla y gestiona el
 					hardware de manera directa.
@@ -38,6 +39,6 @@ export const Firmware = () => {
 					las tareas básicas del dispositivo.
 				</p>
 			</ul>
-		</>
+		</section>
 	);
 };

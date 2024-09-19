@@ -14,7 +14,7 @@ export const MemoriaROM = () => {
 					intactos incluso después de apagar el sistema.
 				</p>
 				<h2>Características principales de la memoria ROM:</h2>
-				<ol>
+				<ol className="list">
 					<li>
 						Solo lectura: Como su nombre lo indica, la ROM está diseñada para
 						ser leída, no para ser modificada fácilmente. Los datos se escriben
@@ -39,7 +39,7 @@ export const MemoriaROM = () => {
 					Existen varios tipos de ROM que varían en la capacidad de ser
 					reescritos o actualizados:
 				</p>
-				<ol>
+				<ol className="list">
 					<li>
 						ROM estándar: Es la versión más básica. Los datos se escriben
 						durante el proceso de fabricación y no pueden ser modificados.
@@ -75,7 +75,7 @@ export const MemoriaROM = () => {
 					electrodomésticos, y sistemas embebidos.
 				</p>
 				<h2>Resumen de la memoria ROM:</h2>
-				<ul>
+				<ul className="list">
 					<li>
 						Función principal: Almacenar instrucciones esenciales que no deben
 						cambiar, como el firmware o el código de arranque (bootloader).

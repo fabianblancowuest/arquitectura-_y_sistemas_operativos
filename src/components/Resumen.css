@@ -3,20 +3,20 @@
 	letter-spacing: 1px;
 	max-width: 1200px;
 	line-height: 1.5;
+	padding: 1em 0;
 }
 
-.title {
+.subtitle {
 	font-size: 2rem;
 	font-weight: bold;
 	font-style: normal;
-	margin-bottom: 2em;
+	margin: 1.5em 0;
 }
 
 .paragraph {
 	font-size: 1.1rem;
 	font-weight: normal;
 	letter-spacing: 0.8px;
-	/* text-align: center; */
 }
 
 strong {
@@ -37,13 +37,18 @@ th {
 
 ol,
 li {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 1em auto;
 	text-align: left;
 }
 
-.li {
+.list li {
 	background-color: #444;
 	border-radius: 5px;
-	padding: 1em;
+	padding: 1.5em 1em;
+	transition: all 0.2s ease-in-out;
+}
+
+.list li:hover {
+	background-color: #555;
 }

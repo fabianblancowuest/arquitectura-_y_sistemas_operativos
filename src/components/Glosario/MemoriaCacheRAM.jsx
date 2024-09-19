@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Glosario = () => {
+export const MemoriaCacheRAM = () => {
 	return (
 		<div className="container">
 			<h2 className="title">La memoria caché y la memoria RAM</h2>

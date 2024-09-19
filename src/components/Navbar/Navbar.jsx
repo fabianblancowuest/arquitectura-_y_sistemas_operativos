@@ -1,15 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../../assets/UTN_logo.jpg";
 
 export const Navbar = () => {
 	return (
 		<div>
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
+					{/* <a class="navbar-brand" href="#">
 						Navbar
-					</a>
+					</a> */}
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -30,18 +31,18 @@ export const Navbar = () => {
 									</a>
 								</li>
 							</NavLink>
-							<NavLink to={"/glosario"}>
+							{/* <NavLink to={"/glosario"}>
 								<li>
 									<a class="nav-link" aria-current="page" href="#">
 										Glosario
 									</a>
 								</li>
-							</NavLink>
-							<li class="nav-item">
+							</NavLink> */}
+							{/* <li class="nav-item">
 								<a class="nav-link" href="#">
 									Link
 								</a>
-							</li>
+							</li> */}
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle"
@@ -60,25 +61,35 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
-									<NavLink to={"/referencias"}>
+									<NavLink to={"/firmware"}>
 										<li>
 											<hr class="dropdown-divider" />
 										</li>
 										<li>
 											<a class="dropdown-item" href="#">
-												Referencias
+												Firmware
+											</a>
+										</li>
+									</NavLink>
+									<NavLink to={"/memoria-cache-ram"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Memoria RAM Y Caché
 											</a>
 										</li>
 									</NavLink>
 								</ul>
 							</li>
-							<li class="nav-item">
+							{/* <li class="nav-item">
 								<a class="nav-link disabled" aria-disabled="true">
 									Disabled
 								</a>
-							</li>
+							</li> */}
 						</ul>
-						<form class="d-flex" role="search">
+						{/* <form class="d-flex" role="search">
 							<input
 								class="form-control me-2"
 								type="search"
@@ -88,7 +99,8 @@ export const Navbar = () => {
 							<button class="btn btn-outline-success" type="submit">
 								Search
 							</button>
-						</form>
+						</form> */}
+						<img className="logo-utn" src={logo} alt="Logo UTN" />
 					</div>
 				</div>
 			</nav>
