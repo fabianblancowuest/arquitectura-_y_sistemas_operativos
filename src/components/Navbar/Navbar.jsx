@@ -102,6 +102,16 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
+									<NavLink to={"/memoria-virtual"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Memoria Virtual
+											</a>
+										</li>
+									</NavLink>
 								</ul>
 							</li>
 							{/* <li class="nav-item">
