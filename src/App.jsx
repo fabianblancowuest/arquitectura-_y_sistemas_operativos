@@ -42,14 +42,14 @@ function App() {
 							element={<MemoriaROM></MemoriaROM>}
 						></Route>
 						<Route path="firmware" element={<Firmware></Firmware>}></Route>
-						<Route
+						{/* <Route
 							path="espacio-de-direcciones"
 							element={<EspacioDeDirecciones></EspacioDeDirecciones>}
 						></Route>
 						<Route
 							path="administracion-de-memoria"
 							element={<AdministracionMemoria></AdministracionMemoria>}
-						></Route>
+						></Route> */}
 						<Route
 							path="integrantes"
 							element={<Integrantes></Integrantes>}

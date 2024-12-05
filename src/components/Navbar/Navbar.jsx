@@ -39,7 +39,7 @@ export const Navbar = () => {
 									</a>
 								</li>
 							</NavLink>
-							<NavLink to={"/espacio-de-direcciones"}>
+							{/* <NavLink to={"/espacio-de-direcciones"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
 										Espacio de Direcciones
@@ -52,7 +52,7 @@ export const Navbar = () => {
 										Administración de memoria
 									</a>
 								</li>
-							</NavLink>
+							</NavLink> */}
 							{/* <NavLink to={"/glosario"}>
 								<li>
 									<a class="nav-link" aria-current="page" href="#">
@@ -286,7 +286,8 @@ export const Navbar = () => {
 								</li>
 							</NavLink>
 						</ul>
-						<form class="d-flex" role="search">
+						{/* SearchBar */}
+						{/* <form class="d-flex" role="search">
 							<input
 								class="form-control me-2"
 								type="search"
@@ -296,7 +297,7 @@ export const Navbar = () => {
 							<button class="btn btn-outline-success" type="submit">
 								Search
 							</button>
-						</form>
+						</form> */}
 						<img className="logo-utn" src={logo} alt="Logo UTN" />
 					</div>
 				</div>
