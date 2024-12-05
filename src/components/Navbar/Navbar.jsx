@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/UTN_logo.jpg";
+import { descargarPDF } from "./descargarPDF";
 
 export const Navbar = () => {
 	return (
@@ -122,6 +123,154 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
+								</ul>
+							</li>
+
+							{/* Trabajos Prácticos */}
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Guías Prácticas
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP1.pdf", "GP1.pdf")
+											}
+										>
+											GUÍA PRACTICA 1
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP2.pdf", "GP2.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 2
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP3.pdf", "GP3.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 3
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP4.pdf", "GP4.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 4
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP5.pdf", "GP5.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 5
+										</a>
+									</li>
+
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP5.pdf", "GP5.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 7
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF(
+													"/src/assets/pdfs/GP7-Parte1.pdf",
+													"GP7-Parte1.pdf",
+												)
+											}
+										>
+											GUÍA PRÁCTICA 7 - Parte 1
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF(
+													"/src/assets/pdfs/GP7-Parte2.pdf",
+													"GP7-Parte2.pdf",
+												)
+											}
+										>
+											GUÍA PRÁCTICA 7 - Parte 2
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF(
+													"/src/assets/pdfs/GP7-Parte3.pdf",
+													"GP7-Parte3.pdf",
+												)
+											}
+										>
+											GUÍA PRÁCTICA 7 - Parte 3
+										</a>
+									</li>
 								</ul>
 							</li>
 							{/* <li class="nav-item">
