@@ -6,6 +6,7 @@ import { AdministracionMemoria } from "./AdministracionMemoria";
 import ram from "../assets/img/memoria-ram.png";
 import ssd from "../assets/img/ssd.png";
 import discoDuro from "../assets/img/disco-duro.png";
+import intercambio from "../assets/img/el-intercambio-de-datos.png";
 
 export const Resumen = () => {
 	return (
@@ -30,6 +31,9 @@ export const Resumen = () => {
 			<img src={espacioDirecciones} alt="Espacio de direcciones"></img>
 
 			<h2 className="subtitle">2. Proceso de intercambio memoria-disco</h2>
+			<div className="memoria-disco">
+				<img src={intercambio} alt="Intercambio"></img>
+			</div>
 			<p className="paragraph">
 				El proceso de intercambio se activa cuando la memoria RAM está casi
 				saturada. El sistema operativo identifica las páginas de memoria menos
