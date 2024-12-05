@@ -347,7 +347,7 @@ export const Navbar = () => {
 								<a
 									class="nav-link"
 									aria-current="page"
-									href="https://drive.google.com/drive/folders/1Bs_QMf061g3M1HZDyVvvSB4EQN7UDPXG"
+									href="https://drive.google.com/drive/folders/1rqzX3FVe4jP0CB-OF1qYixeB7o56AsW-?usp=drive_link"
 									target="_blank"
 								>
 									Guías Prácticas en GD
