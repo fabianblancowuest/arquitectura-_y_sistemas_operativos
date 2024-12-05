@@ -2,11 +2,24 @@
 	width: 100%;
 	text-align: center;
 	background: #f8f9fa;
-	padding: 0.5em 0.5em;
+	padding: 1.5em 0.5em;
 	margin-top: auto;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .footer-paragraph {
 	font-size: 1.1rem;
 	color: black;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.footer img {
+	width: 100px;
+	height: 30px;
 }

@@ -13,6 +13,7 @@ import windows from "../assets/img/windows.png";
 import so from "../assets/img/sistema-operativo_2.png";
 import so2 from "../assets/img/sistema-operativo_3.png";
 import so3 from "../assets/img/operando.png";
+import logoUtn from "../assets/img/logo-utn.png";
 
 import cpu from "../assets/img/torre-de-la-cpu.png";
 
@@ -102,29 +103,6 @@ export const PresentacionGeneral = () => {
 				</div>,
 			],
 		},
-		// 	{
-		// 		title: "Espacio de Direcciones",
-		// 		items: [
-		// 			"Noción de espacio de direcciones",
-		// 			"Direcciones físicas vs. direcciones virtuales",
-		// 			"Tamaño del espacio de direcciones",
-		// 			"Espacio de direcciones por proceso",
-		// 			"Ejemplo",
-		// 			"Resumen",
-		// 		],
-		// 	},
-		// 	{
-		// 		title: "Administración de memoria",
-		// 		items: ["Concepto"],
-		// 	},
-		// 	{
-		// 		title: "Administración de memoria con mapa de bits",
-		// 		items: ["¿Cómo funciona?", "Ventajas", "Desventajas"],
-		// 	},
-		// 	{
-		// 		title: "Administración de memoria con listas ligadas",
-		// 		items: ["¿Cómo funciona?", "Ventajas", "Desventajas"],
-		// 	},
 	];
 
 	useEffect(() => {
@@ -152,10 +130,12 @@ export const PresentacionGeneral = () => {
 
 	return (
 		// El evento onClick está en la sección
-		<section
-			onClick={handleNext}
-			style={{ cursor: "pointer", minHeight: "100vh" }}
-		>
+		<section onClick={handleNext} style={{ cursor: "pointer" }}>
+			<div className="header-presentacion">
+				<h2>Prof: Ing. Teresita Benitez</h2>
+				<h2>Tecnicatura Universitaria en Programación</h2>
+				<img src={logoUtn} alt="Logo UTN"></img>
+			</div>
 			<h3 className="subtitulo">{sections[step].title}</h3>
 			<ul className="lista">
 				{sections[step].items.slice(0, subStep + 1).map((item, index) => (

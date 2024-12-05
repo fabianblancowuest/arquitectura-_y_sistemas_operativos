@@ -90,3 +90,15 @@ div {
 .so-title img {
 	width: 120px;
 }
+
+.header-presentacion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3rem;
+}
+
+.header-presentacion img {
+	width: 200px;
+}

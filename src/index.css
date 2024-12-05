@@ -26,15 +26,13 @@ body {
 	margin: 0;
 	display: flex;
 	min-width: 320px;
-	min-height: 100vh;
-	height: 100%;
 	padding: 0;
 }
 
 .contenedor {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
+	min-height: 100vh;
 }
 
 h1 {

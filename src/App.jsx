@@ -21,10 +21,12 @@ function App() {
 		<div className="contenedor">
 			<Router>
 				<Navbar></Navbar>
-				<div className="so-title" style={{ display: "flex" }}>
-					<h1 className="title">Arquitectura y Sistemas Operativos</h1>
-					<img className="so-title" src={so}></img>
-				</div>
+				<header className="titulos">
+					<div className="so-title" style={{ display: "flex" }}>
+						<h1 className="title">Arquitectura y Sistemas Operativos</h1>
+						<img className="so-title" src={so}></img>
+					</div>
+				</header>
 				{/* <div>
 					<a href="https://vitejs.dev" target="_blank">
 						<img src={viteLogo} className="logo" alt="Vite logo" />
@@ -35,7 +37,11 @@ function App() {
 				</div> */}
 				<main>
 					<Routes>
-						<Route exact path="/" element={<Resumen></Resumen>}></Route>
+						<Route
+							exact
+							path="/"
+							element={<PresentacionGeneral></PresentacionGeneral>}
+						></Route>
 						<Route
 							path="memoria-cache-ram"
 							element={<MemoriaCacheRAM></MemoriaCacheRAM>}
@@ -61,10 +67,7 @@ function App() {
 							path="presentacion"
 							element={<Presentacion></Presentacion>}
 						></Route> */}
-						<Route
-							path="presentacion-general"
-							element={<PresentacionGeneral></PresentacionGeneral>}
-						></Route>
+						<Route path="resumen" element={<Resumen></Resumen>}></Route>
 						<Route path="memoria-virtual" element={<MemoriaVirtual />}></Route>
 						<Route path="magnitudes" element={<Magnitudes />}></Route>
 					</Routes>
