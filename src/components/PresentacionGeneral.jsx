@@ -43,43 +43,65 @@ export const PresentacionGeneral = () => {
 				<div className="conclusion">
 					<h2>Procesos e hilos:</h2>
 					<div className="texto-img">
-						Fundamentales para la ejecución concurrente de tareas, optimizando
-						el uso del procesador.
+						Son fundamentales para la ejecución concurrente de tareas,
+						permitiendo que múltiples operaciones se realicen simultáneamente y
+						optimizando así el uso del procesador. Esta capacidad mejora el
+						rendimiento del sistema al aprovechar al máximo los recursos
+						disponibles.
 						<img className="tiny-img" src={cpu}></img>
 					</div>
 					<img className="img" src={procesoHilos}></img>
 				</div>,
 				<div className="conclusion">
 					<h2>Administración de memoria:</h2> Esencial para garantizar un uso
-					eficiente de los recursos y evitar sobrecargas.
+					eficiente de los recursos del sistema, permitiendo que las
+					aplicaciones accedan y gestionen la memoria de manera controlada. Esto
+					asegura un rendimiento óptimo y evita problemas como la fragmentación
+					o fugas de memoria. eficiente de los recursos y evitar sobrecargas.
 					<img className="img" src={memoria} alt="" />
 				</div>,
 				<div className="conclusion">
 					<h2>Rendimiento del sistema: </h2>
-					Se estudiaron las métricas y magnitudes que evalúan la eficiencia
+					Se analizaron detalladamente las métricas y magnitudes que permiten
+					evaluar la eficiencia operativa, proporcionando una visión clara del
+					desempeño y la optimización de los recursos en diversos procesos.
 					operativa.
 					<img className="img" src={rendimiento} alt="" />
 				</div>,
 				<div className="conclusion">
 					<h2>Administración de archivos: </h2>
-					Se exploraron métodos para organizar y gestionar el almacenamiento de
-					datos.
+					Se exploraron diversos métodos para organizar y gestionar el
+					almacenamiento de datos, facilitando la estructuración, recuperación y
+					manipulación eficiente de la información. Estos métodos aseguran un
+					acceso optimizado, la integridad de los datos y la correcta
+					distribución de los recursos de almacenamiento
 					<img className="img" src={archivos} alt="" />
 				</div>,
 				<div className="conclusion">
 					<h2>Entradas y salidas (E/S): </h2>
-					Analizamos los mecanismos que facilitan la interacción con
-					dispositivos externos.
+					Se analizaron los mecanismos que facilitan la interacción con
+					dispositivos externos, permitiendo la transferencia eficiente de datos
+					entre el sistema y periféricos. Estos procesos garantizan una
+					comunicación fluida y optimizada, esencial para el funcionamiento de
+					componentes como teclados, discos y redes.
 					<img className="img" src={ES} alt="" />
 				</div>,
 				<div className="conclusion">
 					<h2>Redes de datos: </h2>
-					Se comprendió cómo se gestionan las comunicaciones entre sistemas.
+					Se comprendió cómo se gestionan las comunicaciones entre sistemas,
+					abarcando los protocolos, arquitecturas y tecnologías que permiten el
+					intercambio eficiente y seguro de información a través de redes
+					locales o globales. Esto garantiza la interconexión de dispositivos y
+					el flujo adecuado de datos en entornos distribuidos.
 					<img className="img" src={redes}></img>
 				</div>,
 				<div className="conclusion">
-					<h2>Virtualización:</h2> Técnica que optimiza recursos al crear
-					entornos aislados para ejecutar múltiples sistemas operativos.
+					<h2>Virtualización:</h2> Técnica que optimiza los recursos al crear
+					entornos aislados en los que se pueden ejecutar múltiples sistemas
+					operativos de manera simultánea en una misma máquina física. Esta
+					estrategia maximiza la utilización de hardware, mejora la flexibilidad
+					y facilita la gestión de recursos al permitir la ejecución de diversas
+					aplicaciones y servicios sin interferencias.
 					<img className="img" src={virt}></img>
 				</div>,
 				<div className="conclusion">
