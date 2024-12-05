@@ -191,7 +191,7 @@ export const Navbar = () => {
 									<li>
 										<a
 											class="dropdown-item"
-											href="../../assets/pdfs/GP1.pdf"
+											href="/src/assets/pdfs/GP1.pdf"
 											download="GP1.pdf"
 											// onClick={() =>
 											// 	descargarPDF("../../assets/pdfs/GP1.pdf", "GP1.pdf")
