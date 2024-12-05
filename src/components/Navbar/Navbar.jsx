@@ -46,13 +46,13 @@ export const Navbar = () => {
 									</a>
 								</li>
 							</NavLink> */}
-							<NavLink to={"/administracion-de-memoria"}>
+							{/* <NavLink to={"/administracion-de-memoria"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
 										Administración de memoria
 									</a>
 								</li>
-							</NavLink>
+							</NavLink> */}
 							{/* <NavLink to={"/glosario"}>
 								<li>
 									<a class="nav-link" aria-current="page" href="#">

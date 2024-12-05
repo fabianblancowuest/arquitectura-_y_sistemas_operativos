@@ -1,5 +1,21 @@
 .lista li {
 	font-size: 1.2rem;
+	list-style: none;
+	animation: aparecer 1s ease-in;
+}
+
+@keyframes aparecer {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .subtitulo {
@@ -7,6 +23,23 @@
 }
 
 .img {
-	width: 400px;
-	height: 250px;
+	width: 470px;
+	height: 300px;
+	display: block;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+div {
+	text-align: center;
+}
+.so {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin: 40px;
+}
+.so img {
+	width: 100px;
 }

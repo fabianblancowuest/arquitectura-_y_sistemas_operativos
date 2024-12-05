@@ -2,6 +2,17 @@ nav {
 	width: 100%;
 }
 
+nav li a {
+	color: black !important;
+	font-weight: 600 !important;
+	letter-spacing: 1px !important;
+	border-radius: 5px !important;
+}
+
+nav li a:hover {
+	background-color: #e4e9ea;
+}
+
 .navbar-nav {
 	margin: 0 auto;
 	display: flex;

@@ -15,13 +15,16 @@ import { AdministracionMemoria } from "./components/AdministracionMemoria";
 import { PresentacionGeneral } from "./components/PresentacionGeneral";
 import { MemoriaVirtual } from "./components/MemoriaVirtual";
 import { Magnitudes } from "./components/Magnitudes";
-
+import so from "./assets/img/sistema-operativo.png";
 function App() {
 	return (
 		<div className="contenedor">
 			<Router>
 				<Navbar></Navbar>
-				<h1 className="title">Arquitectura y Sistemas Operativos</h1>
+				<div className="so" style={{ display: "flex" }}>
+					<h1 className="title">Arquitectura y Sistemas Operativos</h1>
+					<img src={so}></img>
+				</div>
 				{/* <div>
 					<a href="https://vitejs.dev" target="_blank">
 						<img src={viteLogo} className="logo" alt="Vite logo" />
@@ -46,10 +49,10 @@ function App() {
 							path="espacio-de-direcciones"
 							element={<EspacioDeDirecciones></EspacioDeDirecciones>}
 						></Route> */}
-						<Route
+						{/* <Route
 							path="administracion-de-memoria"
 							element={<AdministracionMemoria></AdministracionMemoria>}
-						></Route>
+						></Route> */}
 						<Route
 							path="integrantes"
 							element={<Integrantes></Integrantes>}

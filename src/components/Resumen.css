@@ -17,14 +17,13 @@
 	font-size: 1.1rem;
 	font-weight: normal;
 	letter-spacing: 1px;
-	background-color: #444;
 	padding: 1.5em;
 	border-radius: 10px;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease;
 }
 
 .paragraph:hover {
-	background-color: #555;
+	background: linear-gradient(45deg, #aab7b8, #d5e0e4);
 }
 
 strong {
@@ -51,12 +50,11 @@ li {
 }
 
 .list li {
-	background-color: #444;
 	border-radius: 5px;
 	padding: 1.5em 1em;
 	transition: all 0.2s ease-in-out;
 }
 
 .list li:hover {
-	background-color: #555;
+	background-color: #e4e9ea;
 }

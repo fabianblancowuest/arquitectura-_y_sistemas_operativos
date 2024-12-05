@@ -2,6 +2,7 @@ import React from "react";
 import "./Resumen.css";
 import espacioDirecciones from "./../assets/espacio_de_direcciones.png";
 import adminMemoria from "./../assets/administracion_de_memoria.png";
+import { AdministracionMemoria } from "./AdministracionMemoria";
 
 export const Resumen = () => {
 	return (
@@ -67,6 +68,7 @@ export const Resumen = () => {
 				del sistema.
 			</p>
 			<img src={adminMemoria} alt="Administración de memoria" />
+			<AdministracionMemoria></AdministracionMemoria>
 		</div>
 	);
 };
