@@ -7,7 +7,7 @@ export const Integrantes = () => {
 			<h2>Integrantes del grupo 6:</h2>
 			<ul className="list integrantes">
 				<li>Fabián Blanco Wuest</li>
-				<li>Jose Delfler</li>
+				<li>Jose Derfler</li>
 				<li>Lía Barcos</li>
 				<li>Tomás Centurión</li>
 				<li>Ana Rahn</li>
