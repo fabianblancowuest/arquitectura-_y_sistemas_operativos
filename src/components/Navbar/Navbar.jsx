@@ -143,7 +143,7 @@ export const Navbar = () => {
 											class="dropdown-item"
 											href="#"
 											onClick={() =>
-												descargarPDF("/src/assets/pdfs/GP1.pdf", "GP1.pdf")
+												descargarPDF("../../assets/pdfs/GP1.pdf", "GP1.pdf")
 											}
 										>
 											GUÍA PRACTICA 1
