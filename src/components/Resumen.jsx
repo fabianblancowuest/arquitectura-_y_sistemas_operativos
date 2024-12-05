@@ -10,6 +10,8 @@ import intercambio from "../assets/img/el-intercambio-de-datos.png";
 import intercambio2 from "../assets/img/el-intercambio-de-datos2.png";
 import intercambio3 from "../assets/img/el-intercambio-de-datos3.png";
 import intercambio4 from "../assets/img/intercambio4.png";
+import mapaBits from "../assets/img/mapa-de-bits.png";
+import mapaBits2 from "../assets/img/mapa-de-bits2.png";
 
 export const Resumen = () => {
 	return (

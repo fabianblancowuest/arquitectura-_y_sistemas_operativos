@@ -2,6 +2,10 @@ import React from "react";
 import "./Resumen.css";
 import "./../index.css";
 import administracionMemoria from "./../assets/mapa_de_bits_listas_ligadas.png";
+import mapaBits from "../assets/img/mapa-de-bits.png";
+import mapaBits2 from "../assets/img/mapa-de-bits2.png";
+import lista from "../assets/img/lista.png";
+import lista2 from "../assets/img/lista2.png";
 
 export const AdministracionMemoria = () => {
 	return (
@@ -10,6 +14,10 @@ export const AdministracionMemoria = () => {
 				La administración de memoria con mapa de bits y la administración de
 				memoria con listas ligadas
 			</h2>
+			<div className="memoria-disco">
+				<img src={mapaBits}></img>
+				<img src={mapaBits2}></img>
+			</div>
 			<p>
 				La administración de memoria con mapa de bits y la administración de
 				memoria con listas ligadas son dos enfoques utilizados por los sistemas
@@ -65,6 +73,10 @@ export const AdministracionMemoria = () => {
 			<h2 className="subtitle">
 				2. Administración de Memoria con Listas Ligadas:
 			</h2>
+			<div className="memoria-disco">
+				<img src={lista} alt="Lista Ligada"></img>
+				<img src={lista2} alt="Lista"></img>
+			</div>
 			<li>
 				Como funciona:
 				<ul className="list">
