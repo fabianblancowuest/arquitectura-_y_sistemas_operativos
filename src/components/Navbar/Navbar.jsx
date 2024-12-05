@@ -315,6 +315,20 @@ export const Navbar = () => {
 											class="dropdown-item"
 											href="#"
 											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP8.pdf", "GP8.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 8
+										</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
 												descargarPDF("/src/assets/pdfs/GP9.pdf", "GP9.pdf")
 											}
 										>
