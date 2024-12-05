@@ -25,16 +25,27 @@ a:hover {
 body {
 	margin: 0;
 	display: flex;
-	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
+	height: 100%;
 	padding: 0;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 h1 {
 	font-size: 3.2em;
 	line-height: 1.1;
 	margin: 0.5em 0;
+}
+
+main {
+	flex: 1; /* Se expande para ocupar el espacio restante */
+	padding: 1rem; /* Espaciado alrededor del contenido */
 }
 
 button {

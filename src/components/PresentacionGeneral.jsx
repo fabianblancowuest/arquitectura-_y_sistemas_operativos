@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Presentacion.css";
 import procesoHilos from "../assets/img/procesos-e-hilos.png";
-
+import memoria from "../assets/img/administracion-memoria.png";
+import rendimiento from "../assets/img/rendimiento-sistema.webp";
 export const PresentacionGeneral = () => {
 	const [step, setStep] = useState(0); // Controla la sección
 	const [subStep, setSubStep] = useState(0); // Controla el ítem de la lista
@@ -13,9 +14,11 @@ export const PresentacionGeneral = () => {
 			items: [
 				"Durante la cursada de Arquitectura y Sistemas Operativos, se abordaron temas clave que permiten comprender la gestión y funcionamiento de los sistemas operativos:",
 				"Procesos e hilos: Fundamentales para la ejecución concurrente de tareas, optimizando el uso del procesador.",
-				<img src={procesoHilos}></img>,
+				<img className="img" src={procesoHilos}></img>,
 				"Administración de memoria: Esencial para garantizar un uso eficiente de los recursos y evitar sobrecargas.",
+				<img className="img" src={memoria} alt="" />,
 				"Rendimiento del sistema: Se estudiaron las métricas y magnitudes que evalúan la eficiencia operativa",
+				<img className="img" src={rendimiento} alt="" />,
 				"Administración de archivos: Se exploraron métodos para organizar y gestionar el almacenamiento de datos.",
 				"Entradas y salidas (E/S): Analizamos los mecanismos que facilitan la interacción con dispositivos externos.",
 				"Redes de datos: Se comprendió cómo se gestionan las comunicaciones entre sistemas.",
@@ -67,7 +70,7 @@ export const PresentacionGeneral = () => {
 		// El evento onClick está en la sección
 		<section
 			onClick={handleNext}
-			style={{ cursor: "pointer", height: "100vh" }}
+			style={{ cursor: "pointer", minHeight: "100vh" }}
 		>
 			<h3 className="subtitulo">{sections[step].title}</h3>
 			<ul className="lista">

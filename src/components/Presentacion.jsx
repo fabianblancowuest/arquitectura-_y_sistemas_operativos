@@ -59,7 +59,7 @@ export const Presentacion = () => {
 		// El evento onClick está en la sección
 		<section
 			onClick={handleNext}
-			style={{ cursor: "pointer", height: "100vh" }}
+			style={{ cursor: "pointer", miHeight: "100vh" }}
 		>
 			<h3 className="subtitulo">{sections[step].title}</h3>
 			<ul className="lista">

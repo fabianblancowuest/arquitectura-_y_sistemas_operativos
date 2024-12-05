@@ -18,7 +18,7 @@ import { Magnitudes } from "./components/Magnitudes";
 
 function App() {
 	return (
-		<>
+		<div className="contenedor">
 			<Router>
 				<Navbar></Navbar>
 				<h1 className="title">Arquitectura y Sistemas Operativos</h1>
@@ -68,7 +68,7 @@ function App() {
 				</main>
 				<Footer></Footer>
 			</Router>
-		</>
+		</div>
 	);
 }
 
