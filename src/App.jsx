@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Integrantes } from "./components/Integrantes/Integrantes";
 import { EspacioDeDirecciones } from "./components/EspacioDeDirecciones";
 import { AdministracionMemoria } from "./components/AdministracionMemoria";
-import { Presentacion } from "./components/Presentacion";
+import { PresentacionGeneral } from "./components/PresentacionGeneral";
 import { MemoriaVirtual } from "./components/MemoriaVirtual";
 import { Magnitudes } from "./components/Magnitudes";
 
@@ -45,18 +45,22 @@ function App() {
 						{/* <Route
 							path="espacio-de-direcciones"
 							element={<EspacioDeDirecciones></EspacioDeDirecciones>}
-						></Route>
+						></Route> */}
 						<Route
 							path="administracion-de-memoria"
 							element={<AdministracionMemoria></AdministracionMemoria>}
-						></Route> */}
+						></Route>
 						<Route
 							path="integrantes"
 							element={<Integrantes></Integrantes>}
 						></Route>
-						<Route
+						{/* <Route
 							path="presentacion"
 							element={<Presentacion></Presentacion>}
+						></Route> */}
+						<Route
+							path="presentacion-general"
+							element={<PresentacionGeneral></PresentacionGeneral>}
 						></Route>
 						<Route path="memoria-virtual" element={<MemoriaVirtual />}></Route>
 						<Route path="magnitudes" element={<Magnitudes />}></Route>

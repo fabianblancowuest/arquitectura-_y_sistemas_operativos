@@ -25,7 +25,7 @@ export const Navbar = () => {
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<NavLink to={"/presentacion"}>
+							<NavLink to={"/presentacion-general"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
 										Presentación
@@ -45,14 +45,14 @@ export const Navbar = () => {
 										Espacio de Direcciones
 									</a>
 								</li>
-							</NavLink>
+							</NavLink> */}
 							<NavLink to={"/administracion-de-memoria"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
 										Administración de memoria
 									</a>
 								</li>
-							</NavLink> */}
+							</NavLink>
 							{/* <NavLink to={"/glosario"}>
 								<li>
 									<a class="nav-link" aria-current="page" href="#">
