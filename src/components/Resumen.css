@@ -63,6 +63,7 @@ li {
 	display: flex;
 	gap: 5em;
 	justify-content: center;
+	margin: 3em 0;
 }
 
 .memoria-disco img {
