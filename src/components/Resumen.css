@@ -58,3 +58,13 @@ li {
 .list li:hover {
 	background-color: #e4e9ea;
 }
+
+.memoria-disco {
+	display: flex;
+	gap: 5em;
+	justify-content: center;
+}
+
+.memoria-disco img {
+	width: 200px;
+}

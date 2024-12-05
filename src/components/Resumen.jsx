@@ -3,6 +3,9 @@ import "./Resumen.css";
 import espacioDirecciones from "./../assets/espacio_de_direcciones.png";
 import adminMemoria from "./../assets/administracion_de_memoria.png";
 import { AdministracionMemoria } from "./AdministracionMemoria";
+import ram from "../assets/img/memoria-ram.png";
+import ssd from "../assets/img/ssd.png";
+import discoDuro from "../assets/img/disco-duro.png";
 
 export const Resumen = () => {
 	return (
@@ -10,6 +13,11 @@ export const Resumen = () => {
 			<h2 className="subtitle">
 				1. Administración del intercambio memoria-disco
 			</h2>
+			<div className="memoria-disco">
+				<img src={ram} alt="Memoria Ram"></img>
+				<img src={ssd} alt="SDD"></img>
+				<img src={discoDuro} alt="Disco Duro"></img>
+			</div>
 			<p className="paragraph">
 				El intercambio memoria-disco (swap) es una técnica utilizada por los
 				sistemas operativos para gestionar la memoria cuando la RAM física se
