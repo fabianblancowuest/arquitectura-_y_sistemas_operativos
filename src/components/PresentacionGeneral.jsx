@@ -86,7 +86,7 @@ export const PresentacionGeneral = () => {
 					sistema operativo trabaja en conjunto para garantizar un rendimiento
 					eficiente y flexible, adaptándose a las necesidades actuales de la
 					tecnología. */}
-					<h4>Conclusión:</h4>
+					<h2>Conclusión:</h2>
 					<p>
 						Este enfoque integral facilitó una comprensión profunda de cómo cada
 						uno de los componentes del sistema operativo interactúa y colabora
