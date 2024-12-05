@@ -7,6 +7,9 @@ import ram from "../assets/img/memoria-ram.png";
 import ssd from "../assets/img/ssd.png";
 import discoDuro from "../assets/img/disco-duro.png";
 import intercambio from "../assets/img/el-intercambio-de-datos.png";
+import intercambio2 from "../assets/img/el-intercambio-de-datos2.png";
+import intercambio3 from "../assets/img/el-intercambio-de-datos3.png";
+import intercambio4 from "../assets/img/intercambio4.png";
 
 export const Resumen = () => {
 	return (
@@ -33,6 +36,9 @@ export const Resumen = () => {
 			<h2 className="subtitle">2. Proceso de intercambio memoria-disco</h2>
 			<div className="memoria-disco">
 				<img src={intercambio} alt="Intercambio"></img>
+				{/* <img src={intercambio2} alt="Intercambio"></img> */}
+				<img src={intercambio3} alt="Intercambio"></img>
+				<img src={intercambio4} alt="Intercambio"></img>
 			</div>
 			<p className="paragraph">
 				El proceso de intercambio se activa cuando la memoria RAM está casi
