@@ -329,6 +329,17 @@ export const Navbar = () => {
 								</a>
 							</li> */}
 
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="https://drive.google.com/drive/folders/1Bs_QMf061g3M1HZDyVvvSB4EQN7UDPXG"
+									target="_blank"
+								>
+									Guías Prácticas en GD
+								</a>
+							</li>
+
 							<NavLink to={"/integrantes"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
