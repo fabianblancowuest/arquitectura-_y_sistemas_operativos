@@ -16,6 +16,11 @@ import { PresentacionGeneral } from "./components/PresentacionGeneral";
 import { MemoriaVirtual } from "./components/MemoriaVirtual";
 import { Magnitudes } from "./components/Magnitudes";
 import so from "./assets/img/sistema-operativo.png";
+import { IP } from "./components/Glosario/IP";
+import { Emulacion } from "./components/Glosario/Emulacion";
+import { Particion } from "./components/Glosario/Particion";
+import { Registros } from "./components/Glosario/Registros";
+import { Archivos } from "./components/Glosario/Archivos";
 function App() {
 	return (
 		<div className="contenedor">
@@ -51,6 +56,11 @@ function App() {
 							element={<MemoriaROM></MemoriaROM>}
 						></Route>
 						<Route path="firmware" element={<Firmware></Firmware>}></Route>
+						<Route path="ip" element={<IP></IP>}></Route>
+						<Route path="emulacion" element={<Emulacion></Emulacion>}></Route>
+						<Route path="particion" element={<Particion></Particion>}></Route>
+						<Route path="registros" element={<Registros></Registros>}></Route>
+						<Route path="archivos" element={<Archivos></Archivos>}></Route>
 						{/* <Route
 							path="espacio-de-direcciones"
 							element={<EspacioDeDirecciones></EspacioDeDirecciones>}

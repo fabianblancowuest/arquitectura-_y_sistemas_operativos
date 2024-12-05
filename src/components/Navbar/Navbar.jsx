@@ -123,6 +123,56 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
+									<NavLink to={"/ip"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												IP
+											</a>
+										</li>
+									</NavLink>
+									<NavLink to={"/emulacion"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Emulación
+											</a>
+										</li>
+									</NavLink>
+									<NavLink to={"/particion"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Partición
+											</a>
+										</li>
+									</NavLink>
+									<NavLink to={"/registros"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Registros
+											</a>
+										</li>
+									</NavLink>
+									<NavLink to={"/archivos"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Archivos
+											</a>
+										</li>
+									</NavLink>
 								</ul>
 							</li>
 
