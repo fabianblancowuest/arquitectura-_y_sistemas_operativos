@@ -256,6 +256,20 @@ export const Navbar = () => {
 											GUÍA PRÁCTICA 7 - Parte 3
 										</a>
 									</li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li>
+										<a
+											class="dropdown-item"
+											href="#"
+											onClick={() =>
+												descargarPDF("/src/assets/pdfs/GP9.pdf", "GP9.pdf")
+											}
+										>
+											GUÍA PRÁCTICA 9
+										</a>
+									</li>
 								</ul>
 							</li>
 							{/* <li class="nav-item">
