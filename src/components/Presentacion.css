@@ -60,7 +60,7 @@ div {
 }
 
 .images-so img {
-	width: 100px;
+	width: 200px;
 	align-items: center;
 }
 
@@ -76,5 +76,17 @@ div {
 }
 
 .conclusion p {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+}
+
+.so-title {
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.so-title img {
+	width: 120px;
 }

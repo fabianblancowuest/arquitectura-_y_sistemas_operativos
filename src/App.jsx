@@ -21,9 +21,9 @@ function App() {
 		<div className="contenedor">
 			<Router>
 				<Navbar></Navbar>
-				<div className="so" style={{ display: "flex" }}>
+				<div className="so-title" style={{ display: "flex" }}>
 					<h1 className="title">Arquitectura y Sistemas Operativos</h1>
-					<img src={so}></img>
+					<img className="so-title" src={so}></img>
 				</div>
 				{/* <div>
 					<a href="https://vitejs.dev" target="_blank">

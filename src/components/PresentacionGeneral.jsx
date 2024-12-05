@@ -18,7 +18,7 @@ import cpu from "../assets/img/torre-de-la-cpu.png";
 
 export const PresentacionGeneral = () => {
 	const [step, setStep] = useState(0); // Controla la sección
-	const [subStep, setSubStep] = useState(0); // Controla el ítem de la lista
+	const [subStep, setSubStep] = useState(-1); // Controla el ítem de la lista
 	const lastItemRef = useRef(null); // Referencia al último ítem
 
 	// Datos de las secciones y listas
@@ -138,15 +138,14 @@ export const PresentacionGeneral = () => {
 
 	// Avanza al siguiente ítem o sección
 	const handleNext = () => {
-		if (subStep < sections[step].items.length - 1) {
-			setSubStep(subStep + 1); // Avanza dentro de los ítems
-		} else {
+		setSubStep(subStep + 1);
+		if (subStep >= sections[step].items.length - 1) {
 			if (step < sections.length - 1) {
-				setStep(step + 1); // Avanza a la siguiente sección
-				setSubStep(0); // Reinicia los ítems para la nueva sección
+				setStep(step + 1);
+				setSubStep(-1); // Reinicia la subsección oculta
 			} else {
-				setStep(0); // Si es la última sección, reinicia
-				setSubStep(0);
+				setStep(0);
+				setSubStep(-1);
 			}
 		}
 	};
