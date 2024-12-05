@@ -205,21 +205,6 @@ export const Navbar = () => {
 											GUÍA PRÁCTICA 5
 										</a>
 									</li>
-
-									<li>
-										<hr class="dropdown-divider" />
-									</li>
-									<li>
-										<a
-											class="dropdown-item"
-											href="#"
-											onClick={() =>
-												descargarPDF("/src/assets/pdfs/GP5.pdf", "GP5.pdf")
-											}
-										>
-											GUÍA PRÁCTICA 7
-										</a>
-									</li>
 									<li>
 										<hr class="dropdown-divider" />
 									</li>
