@@ -9,6 +9,13 @@
 	gap: 1rem;
 }
 
+@media (max-width: 768px) {
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
 .footer-paragraph {
 	font-size: 1.1rem;
 	color: black;

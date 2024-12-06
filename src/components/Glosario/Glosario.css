@@ -1,0 +1,10 @@
+.glosario-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5em;
+}
+
+.glosario-img img {
+	width: 200px;
+}

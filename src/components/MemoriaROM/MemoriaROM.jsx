@@ -1,11 +1,18 @@
 import React from "react";
 import "../Resumen.css";
+import "../Glosario/Glosario.css";
+import memoriaRom from "../../assets/img/memoria-rom.png";
+import memoriaRom2 from "../../assets/img/rom.png";
 
 export const MemoriaROM = () => {
 	return (
 		<>
 			<div className="container">
 				<h2 className="subtitle">La Memoria ROM</h2>
+				<div className="glosario-img">
+					<img src={memoriaRom} alt="Memoria Rom"></img>
+					<img src={memoriaRom2} alt="Memoria Rom"></img>
+				</div>
 				<p className="paragraph">
 					La memoria ROM (Read-Only Memory o Memoria de Solo Lectura) es un tipo
 					de memoria no volátil que se utiliza para almacenar de forma

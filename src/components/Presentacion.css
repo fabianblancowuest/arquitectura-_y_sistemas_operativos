@@ -91,6 +91,12 @@ div {
 	width: 120px;
 }
 
+@media (max-width: 768px) {
+	.so-title {
+		flex-direction: column;
+	}
+}
+
 .header-presentacion {
 	display: flex;
 	flex-direction: column;
