@@ -64,6 +64,10 @@ div {
 	.so {
 		flex-direction: column;
 	}
+
+	.so img {
+		width: 100px;
+	}
 }
 
 .tiny-img {
@@ -79,6 +83,7 @@ div {
 .images-so {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .images-so img {
