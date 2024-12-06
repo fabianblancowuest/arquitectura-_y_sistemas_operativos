@@ -7,6 +7,7 @@ nav li a {
 	font-weight: 600 !important;
 	letter-spacing: 1px !important;
 	border-radius: 5px !important;
+	text-align: center;
 }
 
 nav li a:hover {
@@ -27,5 +28,22 @@ nav li a:hover {
 		position: absolute;
 		top: 10px;
 		right: 10px;
+	}
+
+	.navbar-nav {
+		margin: 0 auto;
+		display: flex;
+		font-size: 1rem;
+		letter-spacing: 1px;
+		gap: 0;
+		/* font-weight: bold; */
+	}
+
+	.navlink {
+		width: 100% !important;
+	}
+
+	.navbar-nav li a {
+		width: 100% !important;
 	}
 }

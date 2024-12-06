@@ -22,6 +22,12 @@
 	transition: all 0.2s ease;
 }
 
+@media (max-width: 768px) {
+	.paragraph {
+		padding: 0.5em;
+	}
+}
+
 .paragraph:hover {
 	background: linear-gradient(45deg, #aab7b8, #d5e0e4);
 }
@@ -64,8 +70,21 @@ li {
 	gap: 5em;
 	justify-content: center;
 	margin: 3em 0;
+	max-width: 100%;
 }
 
 .memoria-disco img {
 	width: 200px;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.memoria-disco {
+		flex-direction: column;
+	}
+
+	.memoria-disco img {
+		width: 100%;
+		max-width: 80vw;
+	}
 }

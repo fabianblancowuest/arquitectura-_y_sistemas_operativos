@@ -4,6 +4,11 @@
 	animation: aparecer 1s ease-in;
 }
 
+ol,
+ul {
+	padding: 0;
+}
+
 @keyframes aparecer {
 	0% {
 		opacity: 0;
@@ -30,6 +35,17 @@
 	border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+	.img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.tiny-img {
+		display: none;
+	}
+}
+
 div {
 	text-align: center;
 }
@@ -42,6 +58,12 @@ div {
 }
 .so img {
 	width: 200px;
+}
+
+@media (max-width: 768px) {
+	.so {
+		flex-direction: column;
+	}
 }
 
 .tiny-img {
@@ -64,6 +86,12 @@ div {
 	align-items: center;
 }
 
+@media (max-width: 768px) {
+	.images-so {
+		flex-direction: column;
+	}
+}
+
 .conclusion,
 .encabezado {
 	font-size: 1.3rem;
@@ -77,6 +105,17 @@ div {
 
 .conclusion p {
 	font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+	.conclusion,
+	.encabezado {
+		font-size: 1.1rem;
+	}
+
+	.conclusion p {
+		font-size: 1rem;
+	}
 }
 
 .so-title {
