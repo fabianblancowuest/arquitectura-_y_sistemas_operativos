@@ -1,8 +1,9 @@
 import React from "react";
+import "./Glosario.css";
 
 export const Registros = () => {
 	return (
-		<div>
+		<article>
 			<h2>Registros</h2>
 			<p>
 				registros: son pequeñas unidades de almacenamiento de datos dentro de la
@@ -29,6 +30,6 @@ export const Registros = () => {
 				rápidas y almacenar datos críticos durante la ejecución de
 				instrucciones.
 			</p>
-		</div>
+		</article>
 	);
 };

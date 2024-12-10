@@ -1,8 +1,9 @@
 import React from "react";
+import "./Glosario.css";
 
 export const Archivos = () => {
 	return (
-		<div>
+		<article>
 			<h2>Archivos</h2>
 			<p>
 				archivo: es un conjunto de datos o información almacenada en un
@@ -17,6 +18,6 @@ export const Archivos = () => {
 				servidor en la nube). Los archivos pueden contener datos de diversos
 				tipos, como texto, imágenes, sonidos, programas, entre otros.
 			</p>
-		</div>
+		</article>
 	);
 };

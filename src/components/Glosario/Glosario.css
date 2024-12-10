@@ -8,3 +8,22 @@
 .glosario-img img {
 	width: 200px;
 }
+
+article {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 2;
+	font-size: 1.1rem;
+}
+
+p {
+	text-align: initial !important;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+p:hover {
+	background-color: green;
+	color: white;
+}

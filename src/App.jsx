@@ -1,26 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Resumen } from "./components/Resumen";
 import { Navbar } from "./components/Navbar/Navbar";
 import { MemoriaCacheRAM } from "./components/Glosario/MemoriaCacheRAM";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { MemoriaROM } from "./components/MemoriaROM/MemoriaROM";
 import { Firmware } from "./components/Firmware/Firmware";
 import { Footer } from "./components/Footer/Footer";
 import { Integrantes } from "./components/Integrantes/Integrantes";
-import { EspacioDeDirecciones } from "./components/EspacioDeDirecciones";
 import { AdministracionMemoria } from "./components/AdministracionMemoria";
 import { PresentacionGeneral } from "./components/PresentacionGeneral";
-import { MemoriaVirtual } from "./components/MemoriaVirtual";
-import { Magnitudes } from "./components/Magnitudes";
 import so from "./assets/img/sistema-operativo.png";
 import { IP } from "./components/Glosario/IP";
 import { Emulacion } from "./components/Glosario/Emulacion";
 import { Particion } from "./components/Glosario/Particion";
 import { Registros } from "./components/Glosario/Registros";
 import { Archivos } from "./components/Glosario/Archivos";
+import { MemoriaROM } from "./components/Glosario/MemoriaROM";
+import { MemoriaVirtual } from "./components/Glosario/MemoriaVirtual";
+import { Magnitudes } from "./components/Glosario/Magnitudes";
+import { EspacioDeDirecciones } from "./components/Glosario/EspacioDeDirecciones";
+
 function App() {
 	return (
 		<div className="contenedor">
@@ -61,10 +60,10 @@ function App() {
 						<Route path="particion" element={<Particion></Particion>}></Route>
 						<Route path="registros" element={<Registros></Registros>}></Route>
 						<Route path="archivos" element={<Archivos></Archivos>}></Route>
-						{/* <Route
+						<Route
 							path="espacio-de-direcciones"
 							element={<EspacioDeDirecciones></EspacioDeDirecciones>}
-						></Route> */}
+						></Route>
 						{/* <Route
 							path="administracion-de-memoria"
 							element={<AdministracionMemoria></AdministracionMemoria>}

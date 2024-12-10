@@ -1,10 +1,11 @@
 import React from "react";
-import "./Resumen.css";
-import "../index.css";
+import "../Resumen.css";
+import "../../index.css";
+import "./Glosario.css";
 
 export const Magnitudes = () => {
 	return (
-		<div className="container">
+		<article className="container">
 			<p className="paragraph">
 				En arquitectura de computadoras y sistemas operativos, las magnitudes
 				son unidades o medidas que permiten cuantificar y describir las
@@ -106,6 +107,6 @@ export const Magnitudes = () => {
 			procesamiento, hasta el consumo energético y la capacidad de multitarea,
 			permitiendo optimizar tanto el diseño del hardware como la administración
 			de los recursos en el software. */}
-		</div>
+		</article>
 	);
 };

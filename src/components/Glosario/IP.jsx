@@ -3,7 +3,7 @@ import "./Glosario.css";
 
 export const IP = () => {
 	return (
-		<div>
+		<article>
 			<h2>IP</h2>
 			<p>
 				IP: (Protocolo de Internet, por sus siglas en inglés) es un conjunto de
@@ -28,6 +28,6 @@ export const IP = () => {
 				dispositivos puedan localizarse y comunicarse correctamente dentro de
 				una red, como la de Internet.
 			</p>
-		</div>
+		</article>
 	);
 };

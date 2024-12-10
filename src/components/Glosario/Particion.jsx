@@ -1,8 +1,9 @@
 import React from "react";
+import "./Glosario.css";
 
 export const Particion = () => {
 	return (
-		<div>
+		<article>
 			<h2>Partición</h2>
 			<p>
 				particion: Una partición en informática se refiere a la división de un
@@ -19,6 +20,6 @@ export const Particion = () => {
 				particiones se gestionan a través de una tabla de particiones, que
 				define cómo se dividen y acceden a estas áreas en el disco.
 			</p>
-		</div>
+		</article>
 	);
 };

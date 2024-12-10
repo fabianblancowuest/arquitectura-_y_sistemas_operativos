@@ -1,8 +1,9 @@
 import React from "react";
+import "./Glosario.css";
 
 export const Emulacion = () => {
 	return (
-		<div>
+		<article>
 			<h2>Emulación</h2>
 			<p>
 				Emulación:es el proceso mediante el cual un sistema de hardware o
@@ -32,6 +33,6 @@ export const Emulacion = () => {
 				programas en plataformas incompatibles o permitir la interoperabilidad
 				entre diferentes sistemas.
 			</p>
-		</div>
+		</article>
 	);
 };

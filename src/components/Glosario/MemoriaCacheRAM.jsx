@@ -1,8 +1,9 @@
 import React from "react";
+import "./Glosario.css";
 
 export const MemoriaCacheRAM = () => {
 	return (
-		<div className="container">
+		<article className="container">
 			<h2 className="subtitle">La memoria caché y la memoria RAM</h2>
 			<p className="paragraph">
 				La memoria caché y la RAM (memoria de acceso aleatorio) son dos tipos de
@@ -106,6 +107,6 @@ export const MemoriaCacheRAM = () => {
 					<td>Memoria principal para el sistema</td>
 				</tr>
 			</table>
-		</div>
+		</article>
 	);
 };

@@ -173,6 +173,16 @@ export const Navbar = () => {
 											</a>
 										</li>
 									</NavLink>
+									<NavLink to={"/espacio-de-direcciones"}>
+										<li>
+											<hr class="dropdown-divider" />
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												Espacio de direcciones
+											</a>
+										</li>
+									</NavLink>
 								</ul>
 							</li>
 

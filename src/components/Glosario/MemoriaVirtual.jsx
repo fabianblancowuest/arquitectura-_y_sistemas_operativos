@@ -1,10 +1,11 @@
 import React from "react";
-import "./Presentacion.css";
-import "./../index.css";
+import "../Presentacion.css";
+import "../../index.css";
+import "./Glosario.css";
 
 export const MemoriaVirtual = () => {
 	return (
-		<section className="container">
+		<article className="container">
 			<h2>¿Qué es la memoria virtual?</h2>
 			<p className="paragraph">
 				La memoria virtual es una técnica utilizada por los sistemas operativos
@@ -48,6 +49,6 @@ export const MemoriaVirtual = () => {
 					</p>
 				</li>
 			</ul>
-		</section>
+		</article>
 	);
 };

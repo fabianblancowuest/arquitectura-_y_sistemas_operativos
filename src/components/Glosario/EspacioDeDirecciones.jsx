@@ -1,10 +1,11 @@
 import React from "react";
-import "./Resumen.css";
-import "./../index.css";
+import "../Resumen.css";
+import "../../index.css";
+import "./Glosario.css";
 
 export const EspacioDeDirecciones = () => {
 	return (
-		<section>
+		<article>
 			<h2 className="subtitle">La Noción de Un Espacio de Direcciones</h2>
 			<p className="paragraph">
 				La noción de un espacio de direcciones se refiere al conjunto de todas
@@ -64,6 +65,6 @@ export const EspacioDeDirecciones = () => {
 					operativos.
 				</p>
 			</ol>
-		</section>
+		</article>
 	);
 };
