@@ -7,7 +7,7 @@ export const Footer = () => {
 		<footer className="footer">
 			<p className="footer-paragraph">
 				Tecnicatura Universitaria en Programación - Arquitectura y Sistemas
-				Operativos - Grupo 6
+				Operativos
 			</p>
 			<img src={logoUtn} alt="Logo UTN"></img>
 		</footer>

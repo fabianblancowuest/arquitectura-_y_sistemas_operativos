@@ -9,8 +9,9 @@
 	width: 200px;
 }
 
-article {
-	max-width: 1200px;
+article,
+p {
+	max-width: 1050px;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 2;
@@ -21,9 +22,9 @@ p {
 	text-align: initial !important;
 	padding: 1em;
 	border-radius: 10px;
+	transition: background-color 0.3s ease;
 }
 
 p:hover {
-	background-color: green;
-	color: white;
+	background-color: #aeb5b8;
 }
