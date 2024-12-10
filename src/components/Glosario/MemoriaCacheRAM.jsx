@@ -1,14 +1,22 @@
 import React from "react";
 import "./Glosario.css";
+import mram from "../../assets/img/ram.png";
+import mcache from "../../assets/img/cache.png";
 
 export const MemoriaCacheRAM = () => {
 	return (
 		<article className="container">
 			<h2 className="subtitle">La memoria caché y la memoria RAM</h2>
+			<div className="glosario-img">
+				<img src={mcache} alt="memoria-caché"></img>
+				<img src={mram} alt="memoria ram"></img>
+			</div>
 			<p className="paragraph">
 				La memoria caché y la RAM (memoria de acceso aleatorio) son dos tipos de
 				memoria que se utilizan para almacenar datos temporalmente, pero tienen
 				diferencias clave en su propósito, ubicación, velocidad y tamaño.
+			</p>
+			<p className="paragraph">
 				<strong>1. Propósito:</strong>
 				Memoria caché: Está diseñada para almacenar datos e instrucciones que el
 				procesador necesita de forma inmediata o frecuente, con el objetivo de
@@ -67,7 +75,6 @@ export const MemoriaCacheRAM = () => {
 				rendimiento del sistema, trabajando en conjunto para que el procesador
 				acceda a los datos de manera eficiente.
 			</p>
-
 			<h2 className="title">Resumen de las diferencias</h2>
 			{/* <Caption>Resumen de las diferencias</Caption> */}
 			<table border={1}>
