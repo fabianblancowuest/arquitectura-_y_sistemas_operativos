@@ -4,9 +4,9 @@ import "./Glosario.css";
 export const Archivos = () => {
 	return (
 		<article>
-			<h2>Archivos</h2>
+			<h2>¿Qué es un archivo?</h2>
 			<p>
-				archivo: es un conjunto de datos o información almacenada en un
+				Un archivo es un conjunto de datos o información almacenada en un
 				dispositivo de almacenamiento, como un ordenador, una memoria USB o la
 				nube. Los archivos pueden contener texto, imágenes, videos, música o
 				cualquier otro tipo de información digital. Cada archivo tiene un nombre

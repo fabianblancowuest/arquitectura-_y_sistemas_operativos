@@ -6,6 +6,7 @@ import "./Glosario.css";
 export const Magnitudes = () => {
 	return (
 		<article className="container">
+			<h2>Magnitudes</h2>
 			<p className="paragraph">
 				En arquitectura de computadoras y sistemas operativos, las magnitudes
 				son unidades o medidas que permiten cuantificar y describir las
