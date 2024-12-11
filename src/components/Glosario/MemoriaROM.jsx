@@ -7,7 +7,7 @@ import memoriaRom2 from "../../assets/img/rom.png";
 export const MemoriaROM = () => {
 	return (
 		<article className="container">
-			<h2 className="subtitle">La Memoria ROM</h2>
+			<h2 className="subtitle">¿Qué es la Memoria ROM?</h2>
 			<div className="glosario-img">
 				<img src={memoriaRom} alt="Memoria Rom"></img>
 				<img src={memoriaRom2} alt="Memoria Rom"></img>

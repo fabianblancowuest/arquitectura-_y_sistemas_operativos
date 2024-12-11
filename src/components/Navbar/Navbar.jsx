@@ -153,6 +153,26 @@ export const Navbar = () => {
 								</ul>
 							</li>
 
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Presentaciones
+								</a>
+								<ul class="dropdown-menu">
+									<NavLink to={"intercambio-memoria-disco"}>
+										<li>
+											<a class="dropdown-item" href="#">
+												Intercambio Memoria Disco
+											</a>
+										</li>
+									</NavLink>
+								</ul>
+							</li>
 							{/* Trabajos Prácticos */}
 							<li class="nav-item dropdown">
 								<a
