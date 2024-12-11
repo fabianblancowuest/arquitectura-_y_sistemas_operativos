@@ -1,7 +1,18 @@
+.container-integrantes .list {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.container-integrantes h2 {
+	margin-bottom: 1em;
+}
+
 .integrantes li {
 	list-style: none;
 	text-align: center;
 	width: 500px;
+	max-width: 100%;
 	background-color: black;
 	color: wheat;
 	font-weight: bold;

@@ -32,32 +32,6 @@ export const Navbar = () => {
 									</a>
 								</li>
 							</NavLink>
-							{/* <NavLink to={"/espacio-de-direcciones"}>
-								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="#">
-										Espacio de Direcciones
-									</a>
-								</li>
-							</NavLink> */}
-							{/* <NavLink to={"/administracion-de-memoria"}>
-								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="#">
-										Administración de memoria
-									</a>
-								</li>
-							</NavLink> */}
-							{/* <NavLink to={"/glosario"}>
-								<li>
-									<a class="nav-link" aria-current="page" href="#">
-										Glosario
-									</a>
-								</li>
-							</NavLink> */}
-							{/* <li class="nav-item">
-								<a class="nav-link" href="#">
-									Link
-								</a>
-							</li> */}
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle"
