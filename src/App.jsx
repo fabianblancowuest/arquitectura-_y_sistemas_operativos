@@ -26,7 +26,10 @@ function App() {
 			<Router>
 				<Navbar></Navbar>
 				<header className="titulos">
-					<div className="so-title" style={{ display: "flex" }}>
+					<div
+						className="so-title"
+						style={{ display: "flex", flexDirection: "column" }}
+					>
 						<h1 className="title">Arquitectura y Sistemas Operativos</h1>
 						<img className="so-title" src={so}></img>
 					</div>

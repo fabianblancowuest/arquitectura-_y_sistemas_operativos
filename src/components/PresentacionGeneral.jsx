@@ -21,6 +21,7 @@ export const PresentacionGeneral = () => {
 	const [step, setStep] = useState(0); // Controla la sección
 	const [subStep, setSubStep] = useState(-1); // Controla el ítem de la lista
 	const lastItemRef = useRef(null); // Referencia al último ítem
+	const [isHovered, setIsHovered] = useState(false);
 
 	// Datos de las secciones y listas
 	const sections = [
@@ -152,11 +153,22 @@ export const PresentacionGeneral = () => {
 
 	return (
 		// El evento onClick está en la sección
-		<section onClick={handleNext} style={{ cursor: "pointer" }}>
+		<section
+			onClick={handleNext}
+			style={{ cursor: "pointer" }}
+			className="presentacion"
+		>
 			<div className="header-presentacion">
 				<h2>Prof: Ing. Teresita Benitez</h2>
 				<h2>Tecnicatura Universitaria en Programación</h2>
-				<img src={logoUtn} alt="Logo UTN"></img>
+				<img
+					src={logoUtn}
+					alt="Logo UTN"
+					title="Clic para empezar"
+					// onMouseEnter={() => setIsHovered(true)}
+					// onMouseLeave={() => setIsHovered(false)}
+				></img>
+				<p className={isHovered ? "hidden" : "visible"}>Clic para empezar</p>
 			</div>
 			<h3 className="subtitulo">{sections[step].title}</h3>
 			<ul className="lista">

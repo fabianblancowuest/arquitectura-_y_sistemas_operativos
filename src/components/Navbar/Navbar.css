@@ -41,9 +41,24 @@ nav li a:hover {
 
 	.navlink {
 		width: 100% !important;
+		height: 100% !important;
+		padding: 1em 0 !important;
 	}
 
 	.navbar-nav li a {
+		/* padding: 1em 0 !important; */
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.dropdown-toggle {
 		width: 100% !important;
+	}
+
+	ol,
+	li {
+		margin: 0 !important;
 	}
 }
