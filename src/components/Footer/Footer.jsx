@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logoUtn from "../../assets/img/logo-utn.png";
+import logoUtn from "../../assets/images/logo-utn.png";
 
 export const Footer = () => {
 	return (

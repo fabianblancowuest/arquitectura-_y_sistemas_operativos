@@ -3,15 +3,15 @@ import "./Presentaciones.css";
 import espacioDirecciones from "../../assets/espacio_de_direcciones.png";
 import adminMemoria from "../../assets/administracion_de_memoria.png";
 import { AdministracionMemoria } from "./AdministracionMemoria";
-import ram from "../../assets/img/memoria-ram.png";
-import ssd from "../../assets/img/ssd.png";
-import discoDuro from "../../assets/img/disco-duro.png";
-import intercambio from "../../assets/img/el-intercambio-de-datos.png";
-import intercambio2 from "../../assets/img/el-intercambio-de-datos2.png";
-import intercambio3 from "../../assets/img/el-intercambio-de-datos3.png";
-import intercambio4 from "../../assets/img/intercambio4.png";
-import mapaBits from "../../assets/img/mapa-de-bits.png";
-import mapaBits2 from "../../assets/img/mapa-de-bits2.png";
+import ram from "../../assets/images/memoria-ram.png";
+import ssd from "../../assets/images/ssd.png";
+import discoDuro from "../../assets/images/disco-duro.png";
+import intercambio from "../../assets/images/el-intercambio-de-datos.png";
+import intercambio2 from "../../assets/images/el-intercambio-de-datos2.png";
+import intercambio3 from "../../assets/images/el-intercambio-de-datos3.png";
+import intercambio4 from "../../assets/images/intercambio4.png";
+import mapaBits from "../../assets/images/mapa-de-bits.png";
+import mapaBits2 from "../../assets/images/mapa-de-bits2.png";
 
 export const IntercambioMemoriaDisco = () => {
 	return (

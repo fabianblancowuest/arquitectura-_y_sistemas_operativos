@@ -1,5 +1,4 @@
 import React from "react";
-import "../Resumen.css";
 import "../../index.css";
 import "./Glosario.css";
 

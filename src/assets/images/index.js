@@ -1,0 +1,15 @@
+export { default as procesoHilos } from "./procesos-e-hilos.png";
+export { default as memoria } from "./administracion-memoria.png";
+export { default as rendimiento } from "./rendimiento-sistema.webp";
+export { default as archivos } from "./administrador-archivos.jpg";
+export { default as ES } from "./input-output.svg";
+export { default as redes } from "./redes.jpg";
+export { default as virt } from "./virtualizacion.webp";
+export { default as linux } from "./linux.png";
+export { default as android } from "./androide.png";
+export { default as windows } from "./windows.png";
+export { default as so } from "./sistema-operativo_2.png";
+export { default as so2 } from "./sistema-operativo_3.png";
+export { default as so3 } from "./operando.png";
+export { default as logoUtn } from "./logo-utn.png";
+export { default as cpu } from "./torre-de-la-cpu.png";

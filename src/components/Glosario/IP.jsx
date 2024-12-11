@@ -1,7 +1,7 @@
 import React from "react";
 import "./Glosario.css";
-import ip from "../../assets/img/direccion-ip.png";
-import ip2 from "../../assets/img/ip.png";
+import ip from "../../assets/images/direccion-ip.png";
+import ip2 from "../../assets/images/ip.png";
 
 export const IP = () => {
 	return (

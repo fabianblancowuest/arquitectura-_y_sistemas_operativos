@@ -1,21 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Resumen.css";
-import procesoHilos from "../assets/img/procesos-e-hilos.png";
-import memoria from "../assets/img/administracion-memoria.png";
-import rendimiento from "../assets/img/rendimiento-sistema.webp";
-import archivos from "../assets/img/administrador-archivos.jpg";
-import ES from "../assets/img/input-output.svg";
-import redes from "../assets/img/redes.jpg";
-import virt from "../assets/img/virtualizacion.webp";
-import linux from "../assets/img/linux.png";
-import android from "../assets/img/androide.png";
-import windows from "../assets/img/windows.png";
-import so from "../assets/img/sistema-operativo_2.png";
-import so2 from "../assets/img/sistema-operativo_3.png";
-import so3 from "../assets/img/operando.png";
-import logoUtn from "../assets/img/logo-utn.png";
-
-import cpu from "../assets/img/torre-de-la-cpu.png";
+import {
+	ES,
+	android,
+	archivos,
+	cpu,
+	linux,
+	logoUtn,
+	memoria,
+	procesoHilos,
+	redes,
+	rendimiento,
+	so,
+	so2,
+	so3,
+	virt,
+	windows,
+} from "../../assets/images";
 
 export const Resumen = () => {
 	const [step, setStep] = useState(0); // Controla la sección

@@ -2,9 +2,9 @@ import React from "react";
 import "./Glosario.css";
 import "../../index.css";
 
-import emulacion from "../../assets/img/emulacion.png";
-import virtualizacion from "../../assets/img/maquina-virtual.png";
-import emulador from "../../assets/img/emulador.png";
+import emulacion from "../../assets/images/emulacion.png";
+import virtualizacion from "../../assets/images/maquina-virtual.png";
+import emulador from "../../assets/images/emulador.png";
 
 export const Emulacion = () => {
 	return (

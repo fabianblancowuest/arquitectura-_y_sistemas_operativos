@@ -1,7 +1,7 @@
 import React from "react";
 import "./Glosario.css";
-import mram from "../../assets/img/ram.png";
-import mcache from "../../assets/img/cache.png";
+import mram from "../../assets/images/ram.png";
+import mcache from "../../assets/images/cache.png";
 
 export const MemoriaCacheRAM = () => {
 	return (

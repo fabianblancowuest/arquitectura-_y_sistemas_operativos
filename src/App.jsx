@@ -1,24 +1,24 @@
-import { useState } from "react";
 import "./App.css";
 import { IntercambioMemoriaDisco } from "./components/Presentaciones/IntercambioMemoriaDisco";
 import { Navbar } from "./components/Navbar/Navbar";
-import { MemoriaCacheRAM } from "./components/Glosario/MemoriaCacheRAM";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Firmware } from "./components/Firmware/Firmware";
 import { Footer } from "./components/Footer/Footer";
 import { Integrantes } from "./components/Integrantes/Integrantes";
-import { AdministracionMemoria } from "./components/Presentaciones/AdministracionMemoria";
-import so from "./assets/img/sistema-operativo.png";
-import { IP } from "./components/Glosario/IP";
-import { Emulacion } from "./components/Glosario/Emulacion";
-import { Particion } from "./components/Glosario/Particion";
-import { Registros } from "./components/Glosario/Registros";
-import { Archivos } from "./components/Glosario/Archivos";
-import { MemoriaROM } from "./components/Glosario/MemoriaROM";
-import { MemoriaVirtual } from "./components/Glosario/MemoriaVirtual";
-import { Magnitudes } from "./components/Glosario/Magnitudes";
+import so from "./assets/images/sistema-operativo.png";
 import { EspacioDeDirecciones } from "./components/Glosario/EspacioDeDirecciones";
-import { Resumen } from "./components/Resumen";
+import { Resumen } from "./components/Resumen/Resumen";
+import {
+	Archivos,
+	Emulacion,
+	Firmware,
+	Magnitudes,
+	MemoriaCacheRAM,
+	IP,
+	MemoriaROM,
+	MemoriaVirtual,
+	Particion,
+	Registros,
+} from "./components/Glosario";
 
 function App() {
 	return (

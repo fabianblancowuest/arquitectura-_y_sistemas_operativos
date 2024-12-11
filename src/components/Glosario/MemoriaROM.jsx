@@ -1,8 +1,7 @@
 import React from "react";
-import "../Resumen.css";
 import "./Glosario.css";
-import memoriaRom from "../../assets/img/memoria-rom.png";
-import memoriaRom2 from "../../assets/img/rom.png";
+import memoriaRom from "../../assets/images/memoria-rom.png";
+import memoriaRom2 from "../../assets/images/rom.png";
 
 export const MemoriaROM = () => {
 	return (
