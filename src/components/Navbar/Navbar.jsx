@@ -28,13 +28,6 @@ export const Navbar = () => {
 							<NavLink to={"/"}>
 								<li class="nav-item">
 									<a class="nav-link" aria-current="page" href="#">
-										Presentación
-									</a>
-								</li>
-							</NavLink>
-							<NavLink to={"/resumen"}>
-								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="#">
 										Resumen
 									</a>
 								</li>

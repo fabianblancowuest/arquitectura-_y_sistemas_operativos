@@ -1,94 +1,187 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Resumen.css";
-import espacioDirecciones from "./../assets/espacio_de_direcciones.png";
-import adminMemoria from "./../assets/administracion_de_memoria.png";
-import { AdministracionMemoria } from "./AdministracionMemoria";
-import ram from "../assets/img/memoria-ram.png";
-import ssd from "../assets/img/ssd.png";
-import discoDuro from "../assets/img/disco-duro.png";
-import intercambio from "../assets/img/el-intercambio-de-datos.png";
-import intercambio2 from "../assets/img/el-intercambio-de-datos2.png";
-import intercambio3 from "../assets/img/el-intercambio-de-datos3.png";
-import intercambio4 from "../assets/img/intercambio4.png";
-import mapaBits from "../assets/img/mapa-de-bits.png";
-import mapaBits2 from "../assets/img/mapa-de-bits2.png";
+import procesoHilos from "../assets/img/procesos-e-hilos.png";
+import memoria from "../assets/img/administracion-memoria.png";
+import rendimiento from "../assets/img/rendimiento-sistema.webp";
+import archivos from "../assets/img/administrador-archivos.jpg";
+import ES from "../assets/img/input-output.svg";
+import redes from "../assets/img/redes.jpg";
+import virt from "../assets/img/virtualizacion.webp";
+import linux from "../assets/img/linux.png";
+import android from "../assets/img/androide.png";
+import windows from "../assets/img/windows.png";
+import so from "../assets/img/sistema-operativo_2.png";
+import so2 from "../assets/img/sistema-operativo_3.png";
+import so3 from "../assets/img/operando.png";
+import logoUtn from "../assets/img/logo-utn.png";
+
+import cpu from "../assets/img/torre-de-la-cpu.png";
 
 export const Resumen = () => {
-	return (
-		<div className="container">
-			<h2 className="subtitle">
-				1. Administración del intercambio memoria-disco
-			</h2>
-			<div className="memoria-disco">
-				<img src={ram} alt="Memoria Ram"></img>
-				<img src={ssd} alt="SDD"></img>
-				<img src={discoDuro} alt="Disco Duro"></img>
-			</div>
-			<p className="paragraph">
-				El intercambio memoria-disco (swap) es una técnica utilizada por los
-				sistemas operativos para gestionar la memoria cuando la RAM física se
-				llena. Consiste en mover temporalmente datos que no están en uso activo
-				desde la memoria principal (RAM) al disco duro, permitiendo liberar
-				espacio en la RAM para otros procesos. Esta estrategia ayuda a mantener
-				el rendimiento del sistema evitando fallos por falta de memoria, aunque
-				el acceso a disco es mucho más lento que a la memoria RAM.
-			</p>
-			<img src={espacioDirecciones} alt="Espacio de direcciones"></img>
+	const [step, setStep] = useState(0); // Controla la sección
+	const [subStep, setSubStep] = useState(-1); // Controla el ítem de la lista
+	const lastItemRef = useRef(null); // Referencia al último ítem
+	const [isHovered, setIsHovered] = useState(false);
 
-			<h2 className="subtitle">2. Proceso de intercambio memoria-disco</h2>
-			<div className="memoria-disco">
-				<img src={intercambio} alt="Intercambio"></img>
-				{/* <img src={intercambio2} alt="Intercambio"></img> */}
-				<img src={intercambio3} alt="Intercambio"></img>
-				<img src={intercambio4} alt="Intercambio"></img>
+	// Datos de las secciones y listas
+	const sections = [
+		{
+			// title: <h2>Resumen de la Materia</h2>,
+			items: [
+				<div className="encabezado">
+					<h2>Resumen de la Materia</h2>
+					<h4 style={{ textAlign: "center", lineHeight: 1.5 }}>
+						Durante la cursada de Arquitectura y Sistemas Operativos, se
+						abordaron temas clave que permiten comprender la gestión y
+						funcionamiento de los sistemas operativos:
+					</h4>
+					<div className="so">
+						<img src={windows}></img>
+						<img src={linux}></img>
+						<img src={android}></img>
+					</div>
+				</div>,
+				<div className="conclusion">
+					<h2>Procesos e hilos:</h2>
+					<div className="texto-img">
+						Son fundamentales para la ejecución concurrente de tareas,
+						permitiendo que múltiples operaciones se realicen simultáneamente y
+						optimizando así el uso del procesador. Esta capacidad mejora el
+						rendimiento del sistema al aprovechar al máximo los recursos
+						disponibles.
+						<img className="tiny-img" src={cpu}></img>
+					</div>
+					<img className="img" src={procesoHilos}></img>
+				</div>,
+				<div className="conclusion">
+					<h2>Administración de memoria:</h2> Esencial para garantizar un uso
+					eficiente de los recursos del sistema, permitiendo que las
+					aplicaciones accedan y gestionen la memoria de manera controlada. Esto
+					asegura un rendimiento óptimo y evita problemas como la fragmentación
+					o fugas de memoria. eficiente de los recursos y evitar sobrecargas.
+					<img className="img" src={memoria} alt="" />
+				</div>,
+				<div className="conclusion">
+					<h2>Rendimiento del sistema: </h2>
+					Se analizaron detalladamente las métricas y magnitudes que permiten
+					evaluar la eficiencia operativa, proporcionando una visión clara del
+					desempeño y la optimización de los recursos en diversos procesos.
+					operativa.
+					<img className="img" src={rendimiento} alt="" />
+				</div>,
+				<div className="conclusion">
+					<h2>Administración de archivos: </h2>
+					Se exploraron diversos métodos para organizar y gestionar el
+					almacenamiento de datos, facilitando la estructuración, recuperación y
+					manipulación eficiente de la información. Estos métodos aseguran un
+					acceso optimizado, la integridad de los datos y la correcta
+					distribución de los recursos de almacenamiento
+					<img className="img" src={archivos} alt="" />
+				</div>,
+				<div className="conclusion">
+					<h2>Entradas y salidas (E/S): </h2>
+					Se analizaron los mecanismos que facilitan la interacción con
+					dispositivos externos, permitiendo la transferencia eficiente de datos
+					entre el sistema y periféricos. Estos procesos garantizan una
+					comunicación fluida y optimizada, esencial para el funcionamiento de
+					componentes como teclados, discos y redes.
+					<img className="img" src={ES} alt="" />
+				</div>,
+				<div className="conclusion">
+					<h2>Redes de datos: </h2>
+					Se comprendió cómo se gestionan las comunicaciones entre sistemas,
+					abarcando los protocolos, arquitecturas y tecnologías que permiten el
+					intercambio eficiente y seguro de información a través de redes
+					locales o globales. Esto garantiza la interconexión de dispositivos y
+					el flujo adecuado de datos en entornos distribuidos.
+					<img className="img" src={redes}></img>
+				</div>,
+				<div className="conclusion">
+					<h2>Virtualización:</h2> Técnica que optimiza los recursos al crear
+					entornos aislados en los que se pueden ejecutar múltiples sistemas
+					operativos de manera simultánea en una misma máquina física. Esta
+					estrategia maximiza la utilización de hardware, mejora la flexibilidad
+					y facilita la gestión de recursos al permitir la ejecución de diversas
+					aplicaciones y servicios sin interferencias.
+					<img className="img" src={virt}></img>
+				</div>,
+				<div className="conclusion">
+					{/* Este enfoque integral permitió entender cómo cada componente del
+					sistema operativo trabaja en conjunto para garantizar un rendimiento
+					eficiente y flexible, adaptándose a las necesidades actuales de la
+					tecnología. */}
+					<h2>Conclusión:</h2>
+					<p>
+						Este enfoque integral facilitó una comprensión profunda de cómo cada
+						uno de los componentes del sistema operativo interactúa y colabora
+						de manera sinérgica para asegurar un rendimiento óptimo, eficiente y
+						flexible. De esta manera, se logra una adaptación continua y
+						efectiva a las demandas y requerimientos que plantea la tecnología
+						actual, permitiendo que el sistema responda de forma dinámica a los
+						desafíos y cambios en el entorno tecnológico.
+					</p>
+					<div className="images-so">
+						<img src={so}></img>,<img src={so2}></img>,<img src={so3}></img>,
+					</div>
+				</div>,
+			],
+		},
+	];
+
+	useEffect(() => {
+		if (lastItemRef.current) {
+			lastItemRef.current.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+			});
+		}
+	}, [subStep]); // Se ejecuta cada vez que subStep cambia
+
+	// Avanza al siguiente ítem o sección
+	const handleNext = () => {
+		setSubStep(subStep + 1);
+		if (subStep >= sections[step].items.length - 1) {
+			if (step < sections.length - 1) {
+				setStep(step + 1);
+				setSubStep(-1); // Reinicia la subsección oculta
+			} else {
+				setStep(0);
+				setSubStep(-1);
+			}
+		}
+	};
+
+	return (
+		// El evento onClick está en la sección
+		<section
+			onClick={handleNext}
+			style={{ cursor: "pointer" }}
+			className="presentacion"
+		>
+			<div className="header-presentacion">
+				<h2>Prof: Ing. Teresita Benitez</h2>
+				<h2>Tecnicatura Universitaria en Programación</h2>
+				<img
+					src={logoUtn}
+					alt="Logo UTN"
+					title="Clic para empezar"
+					// onMouseEnter={() => setIsHovered(true)}
+					// onMouseLeave={() => setIsHovered(false)}
+				></img>
+				<p className={isHovered ? "hidden" : "visible"}>Clic para empezar</p>
 			</div>
-			<p className="paragraph">
-				El proceso de intercambio se activa cuando la memoria RAM está casi
-				saturada. El sistema operativo identifica las páginas de memoria menos
-				utilizadas y las copia al espacio de intercambio (swap space) en el
-				disco duro. Si estas páginas vuelven a ser necesarias, el sistema las
-				recupera desde el disco de vuelta a la RAM, liberando otras páginas si
-				es necesario. Esto genera un ciclo constante de transferencia entre la
-				RAM y el disco, conocido como paginación o swapping. Etapas del proceso:
-				Detección de falta de memoria: La RAM se llena o se acerca a su
-				capacidad. Identificación de páginas inactivas: Se seleccionan las
-				páginas de memoria menos utilizadas, típicamente basándose en un
-				algoritmo de reemplazo de páginas como LRU (Least Recently Used).
-				Transferencia de páginas al disco: Las páginas seleccionadas se escriben
-				en el área de intercambio en el disco duro. Recuperación de páginas: Si
-				el proceso necesita una página que fue intercambiada, esta se recupera
-				de la partición de swap.
-			</p>
-			<h2 className="subtitle">
-				3. Estrategias de administración y optimización
-			</h2>
-			<p className="paragraph">
-				Para mejorar la administración del intercambio y optimizar el
-				rendimiento, existen varias estrategias: Ajuste de tamaño del swap: El
-				tamaño del área de intercambio es crítico. Un espacio de intercambio
-				demasiado pequeño podría ocasionar que el sistema se quede sin memoria,
-				mientras que uno muy grande podría generar ralentizaciones debido al uso
-				excesivo del disco. Swapping basado en demanda: Se puede optimizar
-				utilizando técnicas como el swapping basado en demanda, donde solo se
-				intercambian páginas cuando es necesario, en lugar de realizar un
-				intercambio preventivo. Almacenamiento en SSD: Colocar el área de
-				intercambio en discos de estado sólido (SSD) puede mejorar
-				significativamente la velocidad de acceso, ya que los SSD son mucho más
-				rápidos que los discos duros tradicionales (HDD). Uso de algoritmos
-				eficientes de reemplazo de páginas: Algoritmos como LRU o FIFO ayudan a
-				optimizar qué páginas se intercambian, reduciendo la cantidad de accesos
-				al disco. Compresión de memoria: En algunos sistemas modernos, antes de
-				mover datos al disco, se comprime la información en la RAM, lo que puede
-				reducir la frecuencia de swapping. Evitar swapping excesivo: Limitar la
-				cantidad de procesos que consumen mucha memoria o añadir más RAM puede
-				ayudar a reducir la necesidad de intercambio constante, mejorando el
-				rendimiento general. Este resumen cubre los conceptos clave de la
-				administración del intercambio memoria-disco, el proceso de swapping y
-				las estrategias que se pueden implementar para optimizar el rendimiento
-				del sistema.
-			</p>
-			<img src={adminMemoria} alt="Administración de memoria" />
-			<AdministracionMemoria></AdministracionMemoria>
-		</div>
+			<h3 className="subtitulo">{sections[step].title}</h3>
+			<ul className="lista">
+				{sections[step].items.slice(0, subStep + 1).map((item, index) => (
+					<li
+						key={index}
+						ref={index === subStep ? lastItemRef : null}
+						className="aparece"
+					>
+						{item}
+					</li>
+				))}
+			</ul>
+		</section>
 	);
 };

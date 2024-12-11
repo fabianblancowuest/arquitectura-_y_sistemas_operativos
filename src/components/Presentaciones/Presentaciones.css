@@ -1,0 +1,90 @@
+.container {
+	font-size: 1rem;
+	letter-spacing: 1px;
+	max-width: 1200px;
+	line-height: 1.5;
+	padding: 1em 0;
+}
+
+.subtitle {
+	font-size: 2rem;
+	font-weight: bold;
+	font-style: normal;
+	margin: 1.5em 0;
+}
+
+.paragraph {
+	font-size: 1.1rem;
+	font-weight: normal;
+	letter-spacing: 1px;
+	padding: 1.5em;
+	border-radius: 10px;
+	transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+	.paragraph {
+		padding: 0.5em;
+	}
+}
+
+.paragraph:hover {
+	background: linear-gradient(45deg, #aab7b8, #d5e0e4);
+}
+
+strong {
+	font-weight: 900;
+	/* color: #222; */
+}
+
+table {
+	font-size: 1.1rem;
+	margin: 0 auto;
+}
+
+td,
+th {
+	border: 1px solid white;
+	padding: 0.5rem;
+}
+
+ol,
+li {
+	max-width: 1000px;
+	margin: 1em auto;
+	text-align: left;
+}
+
+.list li {
+	border-radius: 5px;
+	padding: 1.5em 1em;
+	transition: all 0.2s ease-in-out;
+}
+
+.list li:hover {
+	background-color: #e4e9ea;
+}
+
+.memoria-disco {
+	display: flex;
+	gap: 5em;
+	justify-content: center;
+	margin: 3em 0;
+	max-width: 100%;
+}
+
+.memoria-disco img {
+	width: 200px;
+	max-width: 100%;
+}
+
+@media (max-width: 768px) {
+	.memoria-disco {
+		flex-direction: column;
+	}
+
+	.memoria-disco img {
+		width: 100%;
+		max-width: 80vw;
+	}
+}

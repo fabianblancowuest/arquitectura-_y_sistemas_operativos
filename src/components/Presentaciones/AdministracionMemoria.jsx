@@ -1,11 +1,11 @@
 import React from "react";
-import "./Resumen.css";
-import "./../index.css";
-import administracionMemoria from "./../assets/mapa_de_bits_listas_ligadas.png";
-import mapaBits from "../assets/img/mapa-de-bits.png";
-import mapaBits2 from "../assets/img/mapa-de-bits2.png";
-import lista from "../assets/img/lista.png";
-import lista2 from "../assets/img/lista2.png";
+import "./Presentaciones.css";
+import "../../index.css";
+import administracionMemoria from "../../assets/mapa_de_bits_listas_ligadas.png";
+import mapaBits from "../../assets/img/mapa-de-bits.png";
+import mapaBits2 from "../../assets/img/mapa-de-bits2.png";
+import lista from "../../assets/img/lista.png";
+import lista2 from "../../assets/img/lista2.png";
 
 export const AdministracionMemoria = () => {
 	return (

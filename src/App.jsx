@@ -1,14 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import { Resumen } from "./components/Resumen";
+import { IntercambioMemoriaDisco } from "./components/Presentaciones/IntercambioMemoriaDisco";
 import { Navbar } from "./components/Navbar/Navbar";
 import { MemoriaCacheRAM } from "./components/Glosario/MemoriaCacheRAM";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Firmware } from "./components/Firmware/Firmware";
 import { Footer } from "./components/Footer/Footer";
 import { Integrantes } from "./components/Integrantes/Integrantes";
-import { AdministracionMemoria } from "./components/AdministracionMemoria";
-import { PresentacionGeneral } from "./components/PresentacionGeneral";
+import { AdministracionMemoria } from "./components/Presentaciones/AdministracionMemoria";
 import so from "./assets/img/sistema-operativo.png";
 import { IP } from "./components/Glosario/IP";
 import { Emulacion } from "./components/Glosario/Emulacion";
@@ -19,6 +18,7 @@ import { MemoriaROM } from "./components/Glosario/MemoriaROM";
 import { MemoriaVirtual } from "./components/Glosario/MemoriaVirtual";
 import { Magnitudes } from "./components/Glosario/Magnitudes";
 import { EspacioDeDirecciones } from "./components/Glosario/EspacioDeDirecciones";
+import { Resumen } from "./components/Resumen";
 
 function App() {
 	return (
@@ -44,11 +44,7 @@ function App() {
 				</div> */}
 				<main>
 					<Routes>
-						<Route
-							exact
-							path="/"
-							element={<PresentacionGeneral></PresentacionGeneral>}
-						></Route>
+						<Route exact path="/" element={<Resumen></Resumen>}></Route>
 						<Route
 							path="memoria-cache-ram"
 							element={<MemoriaCacheRAM></MemoriaCacheRAM>}
@@ -79,7 +75,10 @@ function App() {
 							path="presentacion"
 							element={<Presentacion></Presentacion>}
 						></Route> */}
-						<Route path="resumen" element={<Resumen></Resumen>}></Route>
+						<Route
+							path="intercambio-memoria-disco"
+							element={<IntercambioMemoriaDisco></IntercambioMemoriaDisco>}
+						></Route>
 						<Route path="memoria-virtual" element={<MemoriaVirtual />}></Route>
 						<Route path="magnitudes" element={<Magnitudes />}></Route>
 					</Routes>
