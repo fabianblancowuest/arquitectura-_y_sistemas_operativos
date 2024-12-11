@@ -1,7 +1,7 @@
 .container-integrantes .list {
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 0.5em;
 }
 
 .container-integrantes h2 {
